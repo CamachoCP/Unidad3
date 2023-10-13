@@ -1,0 +1,24 @@
+
+package fibonacci;
+import java.util.Scanner;
+
+public class Fibonacci {
+
+   
+    public static void main(String[] args) {
+    
+   Scanner entrada = new Scanner(System.in);
+       
+        int a = 0, b = 1, c, n;
+       
+        System.out.print("Ingrese los numeros que quiere calcular ");
+        n = entrada.nextInt();
+       
+        for (int i = 0; i < n; i++) {
+            System.out.println(a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+}
